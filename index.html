@@ -6,15 +6,17 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js"></script>
   
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
   <main>
     <section class="result-area">
-      <h1>Your result</h1>
+      <h1 class="result-text">Your result</h1>
       <div class="circle">
-        76 of 100
+        <h1>76</h1> 
+        <h3>of 100</h3>
       </div>
       <h2>Great</h2>
       <p>You scored higher than 65% of the people who have taken these tests.</p>
@@ -22,11 +24,9 @@
 
     <section class="summary-area">
       <h3>Summary</h3>
-      <div>Reaction</div>
-      <div>Memory</div>
-      <div>Verbal</div>
-      <div>Visual</div>
 
+      <div id="values-container"></div>
+      
       <button type="button">Continue</button>
     </section>
   </main>
@@ -38,6 +38,5 @@
     </p>
   </footer>
 
-  </div>
 </body>
 </html>
