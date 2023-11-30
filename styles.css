@@ -48,10 +48,14 @@ main {
     flex-direction: column;
     background-color: var(--white);
     border-radius: 15px;
-
+    
     @media (min-width: 600px) {
         flex-direction: row;
-        height: 100%;
+    }
+
+    @media (max-width: 600px) {
+        height: 100vh;
+        min-height: 750px;
     }
 }
 
