@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    /* Primary  */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients  */
+    /* Background  */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    /* Circle  */
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral  */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    background-color: var(--pale-blue);
+}
+
+main {
+    box-shadow: 12px 12px 20px -10px rgba(184,165,165,0.87);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+button {
+    cursor: pointer;
+}
+
+.result-area, .summary-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-area {
+    background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    height: 60%;
+    border-radius: 0 0 15px 15px;
+    color: var(--white);
+}
+
+.summary-area {
+    background-color: var(--white);
+    width: 100%;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: linear-gradient(var(--violet-blue), var(--persian-blue));
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
